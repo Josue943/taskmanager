@@ -10,6 +10,7 @@ const connectionDB = async () => {
     });
     console.log("Connected");
   } catch (error) {
+    console.log("gg");
     console.log(error);
     process.exit(1); //en caso de dar error se detiene
   }
