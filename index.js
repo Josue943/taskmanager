@@ -8,7 +8,7 @@ connectionDB();
 //cors
 app.use(cors());
 //en que me de heroku o 4000
-const port = process.env.port;
+const port = process.env.PORT || 4000;
 //middlewares
 app.use(express.json({ extended: true }));
 
