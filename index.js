@@ -8,7 +8,7 @@ connectionDB();
 //cors
 app.use(cors());
 //en que me de heroku o 4000
-const port = process.env.PORT || 4000;
+const PORT = process.env.PORT || 4000;
 //middlewares
 app.use(express.json({ extended: true }));
 
@@ -17,6 +17,6 @@ app.use("/api", require("./routes/auth"));
 app.use("/api", require("./routes/project"));
 app.use("/api", require("./routes/task"));
 
-app.listen(port, "0.0.0.0", () => {
-  console.log(`Server is runnning at the port ${port}`);
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`Server is runnning at the port ${PORT}`);
 });
